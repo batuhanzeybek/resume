@@ -1,0 +1,962 @@
+/* Mobile App Prototype Styles */
+.prototype-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mobile-device {
+    width: 280px;
+    height: 560px;
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    border: 10px solid #333;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.device-screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    background-color: white;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #000;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+}
+
+.status-icons i {
+    margin-left: 3px;
+    font-size: 9px;
+}
+
+.battery {
+    width: 14px;
+    height: 7px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    margin-left: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.battery::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 9px;
+    height: 3px;
+    background-color: #ffc107;
+    border-radius: 1px;
+}
+
+/* Due App Prototype */
+.due-app {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.due-app .user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 14px;
+}
+
+.due-app .user-greeting {
+    display: flex;
+    align-items: center;
+}
+
+.due-app .avatar {
+    width: 26px;
+    height: 26px;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 11px;
+}
+
+.due-app .greeting {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.due-app .help-btn {
+    font-size: 11px;
+    color: #333;
+}
+
+.due-app .section {
+    margin-bottom: 16px;
+}
+
+.due-app .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 14px;
+}
+
+.due-app .section-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.due-app .view-all {
+    font-size: 11px;
+    color: #333;
+}
+
+.due-app .announcements {
+    padding: 0 14px;
+}
+
+.due-app .announcement-item {
+    display: flex;
+    margin-bottom: 14px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.due-app .announcement-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.due-app .announcement-content {
+    flex: 1;
+}
+
+.due-app .announcement-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.due-app .announcement-text {
+    font-size: 11px;
+    color: #6b7280;
+    margin-bottom: 3px;
+    line-height: 1.2;
+}
+
+.due-app .announcement-date {
+    font-size: 9px;
+    color: #6b7280;
+}
+
+.due-app .surveys {
+    padding: 0 14px;
+}
+
+.due-app .survey-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.due-app .survey-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.due-app .survey-icon {
+    margin-right: 6px;
+    font-size: 11px;
+}
+
+.due-app .survey-description {
+    font-size: 11px;
+    color: #6b7280;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.due-app .survey-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.due-app .survey-option {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    text-align: center;
+    font-size: 10px;
+    color: #4b5563;
+}
+
+.due-app .survey-option.selected {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+.due-app .survey-end-date {
+    font-size: 9px;
+    color: #6b7280;
+}
+
+.due-app .quick-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 14px;
+}
+
+.due-app .quick-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.due-app .quick-action-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.due-app .quick-action-text {
+    font-size: 9px;
+    font-weight: 500;
+    max-width: 60px;
+    line-height: 1.2;
+}
+
+.due-app .bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    padding: 7px 0;
+}
+
+.due-app .nav-item {
+    flex: 1;
+    text-align: center;
+    font-size: 8px;
+    color: #6b7280;
+}
+
+.due-app .nav-item.active {
+    color: #000;
+}
+
+.due-app .nav-icon {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.due-app .nav-bottom-indicator {
+    height: 3px;
+    width: 24px;
+    background-color: #000;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+/* Compliance Plan Generator Prototype - MINIMAL CORPORATE STYLE */
+.compliance-app {
+    background-color: #f9fafc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.compliance-app .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    background-color: #f9fafc;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #000;
+}
+
+.compliance-app .header {
+    padding: 14px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.compliance-app .app-title {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.compliance-app .user-profile {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    color: #1e3a8a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.compliance-app .content {
+    padding: 14px 10px;
+}
+
+.compliance-app .section-title {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+.compliance-app .form-group {
+    margin-bottom: 14px;
+}
+
+.compliance-app label {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.compliance-app select, 
+.compliance-app input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 2px;
+    font-size: 11px;
+    background-color: #ffffff;
+}
+
+.compliance-app .generate-btn {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.compliance-app .result-box {
+    margin-top: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.compliance-app .result-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+.compliance-app .doc-preview {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    height: 100px;
+    overflow-y: auto;
+    font-size: 9px;
+    color: #4b5563;
+    line-height: 1.3;
+    font-family: 'Courier New', monospace;
+}
+
+.compliance-app .download-btn {
+    background-color: #ffffff;
+    color: #1e3a8a;
+    border: 1px solid #1e3a8a;
+    border-radius: 2px;
+    padding: 8px 10px;
+    font-size: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.compliance-app .download-btn i {
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+/* Appeal Letter Generator Prototype - ROUNDED MODERN STYLE */
+.appeal-app {
+    background-color: #f5f3ff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.appeal-app .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    background-color: #f5f3ff;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #000;
+}
+
+.appeal-app .header {
+    padding: 14px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.appeal-app .app-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6d28d9;
+}
+
+.appeal-app .close-btn {
+    font-size: 15px;
+    color: #6b7280;
+}
+
+.appeal-app .progress-container {
+    padding: 0 14px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.appeal-app .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.appeal-app .progress-step {
+    font-weight: 600;
+    color: #6d28d9;
+}
+
+.appeal-app .progress-count {
+    color: #6b7280;
+}
+
+.appeal-app .progress-bar {
+    height: 4px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.appeal-app .progress-filled {
+    height: 100%;
+    width: 50%;
+    background-color: #6d28d9;
+    border-radius: 8px;
+}
+
+.appeal-app .form-content {
+    padding: 0 14px 14px;
+}
+
+.appeal-app .form-group {
+    margin-bottom: 12px;
+}
+
+.appeal-app label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #4b5563;
+}
+
+.appeal-app select,
+.appeal-app input, 
+.appeal-app textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    font-size: 10px;
+    background-color: #ffffff;
+}
+
+.appeal-app textarea {
+    height: 70px;
+    resize: none;
+    border-radius: 12px;
+}
+
+.appeal-app .file-input {
+    display: flex;
+    align-items: center;
+}
+
+.appeal-app .file-input-text {
+    flex: 1;
+    margin-right: 6px;
+    font-size: 10px;
+}
+
+.appeal-app .file-browse-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.appeal-app .actions {
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appeal-app .btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.appeal-app .btn-back {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #4b5563;
+}
+
+.appeal-app .btn-next {
+    background-color: #6d28d9;
+    color: white;
+    border: none;
+}
+
+/* Inventory Management Prototype - CARD-BASED STYLE */
+.inventory-app {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.inventory-app .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    background-color: #ffffff;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #000;
+}
+
+.inventory-app .header {
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.inventory-app .app-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #047857;
+}
+
+.inventory-app .notification-icon {
+    font-size: 15px;
+    color: #047857;
+}
+
+.inventory-app .search-box {
+    margin: 12px 14px;
+    position: relative;
+}
+
+.inventory-app .search-input {
+    width: 100%;
+    padding: 8px 8px 8px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    background-color: #f3f4f6;
+}
+
+.inventory-app .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.inventory-app .categories {
+    display: flex;
+    padding: 0 14px 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.inventory-app .categories::-webkit-scrollbar {
+    display: none;
+}
+
+.inventory-app .category {
+    padding: 6px 12px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    font-size: 10px;
+    white-space: nowrap;
+    margin-right: 6px;
+    color: #4b5563;
+}
+
+.inventory-app .category.active {
+    background-color: #d1fae5;
+    color: #047857;
+    font-weight: 600;
+}
+
+.inventory-app .inventory-list {
+    padding: 0 14px;
+}
+
+.inventory-app .inventory-item {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.inventory-app .item-icon {
+    width: 34px;
+    height: 34px;
+    background-color: #d1fae5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #047857;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.inventory-app .item-details {
+    flex: 1;
+}
+
+.inventory-app .item-name {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 2px;
+    color: #111827;
+}
+
+.inventory-app .item-info {
+    display: flex;
+    font-size: 9px;
+    color: #6b7280;
+}
+
+.inventory-app .item-count {
+    margin-right: 10px;
+}
+
+.inventory-app .item-actions {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.inventory-app .fab {
+    position: absolute;
+    right: 14px;
+    bottom: 60px;
+    width: 42px;
+    height: 42px;
+    background-color: #047857;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 18px;
+}
+
+.inventory-app .bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    padding: 10px 0 6px;
+}
+
+.inventory-app .nav-item {
+    flex: 1;
+    text-align: center;
+    font-size: 8px;
+    color: #6b7280;
+}
+
+.inventory-app .nav-item.active {
+    color: #047857;
+    font-weight: 600;
+}
+
+.inventory-app .nav-icon {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+/* Payment Solution Prototype - DARK FINANCIAL STYLE */
+.payment-app {
+    background-color: #111827;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #f9fafb;
+}
+
+.payment-app .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    background-color: #111827;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #f9fafb;
+}
+
+.payment-app .header {
+    padding: 14px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111827;
+}
+
+.payment-app .app-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #f9fafb;
+}
+
+.payment-app .account-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #f97316;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 10px;
+    color: #fff;
+}
+
+.payment-app .dashboard {
+    padding: 10px 14px;
+}
+
+.payment-app .summary-card {
+    background-color: #f97316;
+    border-radius: 8px;
+    padding: 14px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.payment-app .card-label {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.payment-app .balance {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.payment-app .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.payment-app .action-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 9px;
+    text-align: center;
+    flex: 1;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.payment-app .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 14px 0 10px;
+    color: #f9fafb;
+}
+
+.payment-app .transaction {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.payment-app .transaction-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f97316;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.payment-app .transaction-details {
+    flex: 1;
+}
+
+.payment-app .transaction-name {
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 2px;
+    color: #f9fafb;
+}
+
+.payment-app .transaction-date {
+    font-size: 9px;
+    color: #9ca3af;
+}
+
+.payment-app .transaction-amount {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.payment-app .amount-in {
+    color: #10b981;
+}
+
+.payment-app .amount-out {
+    color: #ef4444;
+}
+
+.payment-app .bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: #1f2937;
+    padding: 10px 0 6px;
+}
+
+.payment-app .nav-item {
+    flex: 1;
+    text-align: center;
+    font-size: 8px;
+    color: #9ca3af;
+}
+
+.payment-app .nav-item.active {
+    color: #f97316;
+}
+
+.payment-app .nav-icon {
+    font-size: 14px;
+    margin-bottom: 2px;
+} 
